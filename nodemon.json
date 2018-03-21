@@ -1,0 +1,17 @@
+{
+  "ignoreRoot": [
+    ".git",
+    "build",
+    "nodemon.json",
+    "node_modules"
+  ],
+  "verbose": true,
+  "watch": [
+    "src",
+    "package.json",
+    ".env",
+    ".env.sample",
+    "node_modules/@nod"
+  ],
+  "ext": "js json env"
+}
