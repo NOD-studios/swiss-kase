@@ -6,9 +6,9 @@
     better/explicit-return:0,
     fp/no-nil:0
  */
-import swissKase, { swiss, kase } from './'
 import { debug } from '@chantelle/util'
 import { tap } from 'ramda'
+import swissKase, { swiss, kase } from '.'
 
 describe('swiss kase', () => {
   test('exports correctly', () => {
@@ -16,7 +16,7 @@ describe('swiss kase', () => {
       kase,
       swiss,
       swissKase[String.fromCodePoint(128298)],
-      swissKase[String.fromCodePoint(129472)],
+      swissKase[String.fromCodePoint(129472)]
     ].map(fn => expect(typeof fn).toBe('function'))
   })
 
@@ -38,7 +38,7 @@ describe('swiss kase', () => {
     const MATCH_ANOTHER = '314234324'
     expect(kase(MATCH, MATCH_ANOTHER)(UNIQUE)(MATCH_ANOTHER)).toMatchObject([
       true,
-      UNIQUE,
+      UNIQUE
     ])
   })
 
@@ -48,7 +48,7 @@ describe('swiss kase', () => {
       kase('NOPE')('sorry'),
       kase('NOPE')('next time'),
       kase('NOPE', 'YES')(thisOne),
-      kase('MAYBE')('you can also found me here'),
+      kase('MAYBE')('you can also found me here')
     )
     expect(result).toBe(thisOne)
   })
@@ -59,7 +59,7 @@ describe('swiss kase', () => {
 
     const result = swiss('WHATEVER', defaultNeedle)(
       kase('NO WAY')('oops'),
-      kase(defaultNeedle)(defaultValue),
+      kase(defaultNeedle)(defaultValue)
     )
 
     expect(result).toBe(defaultValue)
@@ -69,7 +69,7 @@ describe('swiss kase', () => {
     const defaultValue = 'This one is default'
     const result = swiss('WHATEVER')(
       kase('NO WAY')('oops'),
-      kase()(defaultValue),
+      kase()(defaultValue)
     )
 
     expect(result).toBe(defaultValue)

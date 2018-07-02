@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import { either, pipe } from 'ramda'
 import { thrower } from '@chantelle/util'
 
@@ -12,9 +12,9 @@ export const kase = (...haystack: Array<any>) => value =>
   pipe(needle => [
     either(
       haystack => haystack.find(hay => hay === needle) && true,
-      haystack => haystack.length === 0,
+      haystack => haystack.length === 0
     )(haystack),
-    value,
+    value
   ])
 
 export const swiss = (needle, defaultNeedle) => (...kases) =>
@@ -27,19 +27,19 @@ export const swiss = (needle, defaultNeedle) => (...kases) =>
       kases =>
         kases
           .map(kase => kase(defaultNeedle))
-          .find(([kaseResult]) => kaseResult === true),
+          .find(([kaseResult]) => kaseResult === true)
     ),
     either(
       kases =>
         kases === undefined && thrower(Error('No kase matched in swiss')),
-      kases => kases,
+      kases => kases
     ),
-    result => result.reduce((accumulator, next) => next),
+    result => result.reduce((accumulator, next) => next)
   )(kases)
 
 export default {
   [String.fromCodePoint(128298)]: kase,
   [String.fromCodePoint(129472)]: swiss,
   kase,
-  swiss,
+  swiss
 }
