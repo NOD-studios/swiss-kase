@@ -6,8 +6,7 @@
     better/explicit-return:0,
     fp/no-nil:0
  */
-import { debug } from '@chantelle/util'
-import { tap } from 'ramda'
+// import { debug } from '@chantelle/util'
 import swissKase, { swiss, kase } from '.'
 
 describe('swiss kase', () => {
