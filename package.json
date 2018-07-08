@@ -1,7 +1,8 @@
 {
   "name": "@nod/swiss-kase",
   "description": "Switch Case as good as Swiss Cheese 🇨🇭🧀🔪",
-  "main": "./src/index.js",
+  "main": "./build/main.js",
+  "module": "./src/index.js",
   "version": "1.4.0-1",
   "license": "Apache-2.0",
   "eslintIgnore": [
