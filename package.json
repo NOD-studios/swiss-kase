@@ -2,7 +2,7 @@
   "name": "@nod/swiss-kase",
   "description": "Switch Case as good as Swiss Cheese 🇨🇭🧀🔪",
   "main": "./src/index.js",
-  "version": "0.0.0-1",
+  "version": "1.4.0-1",
   "license": "Apache-2.0",
   "eslintIgnore": [
     "bin",
@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "@chantelle/util": "0.0.1-y.4",
-    "@nod/debug-with-package-name": "^1.0.3",
+    "@nod/debug-with-package-name": "^1.4.0-1",
     "@nod/link-local-packages": "^0.0.0-1",
-    "@nod/webpack-config-presets": "^0.0.0-1",
+    "@nod/webpack-config-presets": "^1.4.0-1",
     "backpack-core": "^0.7.0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.66.0",
