@@ -15,7 +15,7 @@ describe('swiss kase', () => {
       kase,
       swiss,
       swissKase[String.fromCodePoint(128298)],
-      swissKase[String.fromCodePoint(129472)]
+      swissKase[String.fromCodePoint(129472)],
     ].map(fn => expect(typeof fn).toBe('function'))
   })
 
@@ -37,7 +37,7 @@ describe('swiss kase', () => {
     const MATCH_ANOTHER = '314234324'
     expect(kase(MATCH, MATCH_ANOTHER)(UNIQUE)(MATCH_ANOTHER)).toMatchObject([
       true,
-      UNIQUE
+      UNIQUE,
     ])
   })
 

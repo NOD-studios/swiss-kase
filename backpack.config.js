@@ -1,4 +1,4 @@
-/* eslint fp/no-mutation:0,import/no-commonjs:0 */
+/* eslint fp/no-mutation:0,import/no-commonjs:0, import/no-extraneous-dependencies:0 */
 
 const { pipe } = require('ramda')
 const { reducePluginLeft, web, dotEnv } = require('@nod/webpack-config-presets')

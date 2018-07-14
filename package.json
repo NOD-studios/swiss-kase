@@ -22,8 +22,11 @@
     "build": "cross-env NODE_ENV=production backpack build",
     "test": "react-scripts test"
   },
-  "devDependencies": {
+  "dependencies": {
     "@chantelle/util": "0.0.1-y.4",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
     "@nod/debug-with-package-name": "^1.4.6-0",
     "@nod/link-local-packages": "^0.0.0-1",
     "@nod/webpack-config-presets": "^1.4.6-0",
