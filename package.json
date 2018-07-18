@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production backpack build",
-    "test": "react-scripts test"
+    "start": "nodemon --exec \"yarn build\""
   },
   "dependencies": {
     "@chantelle/util": "0.0.1-y.4",
