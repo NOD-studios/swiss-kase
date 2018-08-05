@@ -3,7 +3,7 @@
   "description": "Switch Case as good as Swiss Cheese 🇨🇭🧀🔪",
   "main": "./build/main.js",
   "module": "./src/index.js",
-  "version": "1.4.6-0",
+  "version": "1.4.7-0",
   "license": "Apache-2.0",
   "eslintIgnore": [
     "bin",
@@ -27,9 +27,9 @@
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^1.4.6-0",
+    "@nod/debug-with-package-name": "^1.4.7-0",
     "@nod/link-local-packages": "^0.0.0-1",
-    "@nod/webpack-config-presets": "^1.4.6-0",
+    "@nod/webpack-config-presets": "^1.4.7-0",
     "backpack-core": "^0.7.0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.66.0",
