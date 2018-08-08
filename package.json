@@ -3,6 +3,7 @@
   "description": "Switch Case as good as Swiss Cheese 🇨🇭🧀🔪",
   "main": "./build/main.js",
   "module": "./src/index.js",
+  "sideEffects": false,
   "version": "1.4.7-1",
   "license": "Apache-2.0",
   "eslintIgnore": [
@@ -20,23 +21,18 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production backpack build",
-    "start": "nodemon --exec \"yarn build\""
+    "start": "cross-env NODE_ENV=development nodemon --exec \"backpack build\""
   },
   "dependencies": {
-    "@chantelle/util": "0.0.1-y.4",
+    "@chantelle/util": "1.4.7-1",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
     "@nod/debug-with-package-name": "^1.4.7-1",
-    "@nod/link-local-packages": "^0.0.0-1",
-    "@nod/webpack-config-presets": "^1.4.7-1",
     "backpack-core": "^0.7.0",
     "dotenv-safe": "^4.0.4",
-    "flow-bin": "^0.66.0",
-    "flow-runtime": "^0.16.0",
-    "flow-typed": "^2.3.0",
-    "razzle": "^2.2.0",
-    "react-scripts": "^1.1.4",
-    "webpack-dotenv-plugin": "^2.0.2"
+    "flow-bin": "^0.78.0",
+    "flow-runtime": "^0.17.0",
+    "flow-typed": "^2.5.1"
   }
 }
