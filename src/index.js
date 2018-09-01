@@ -1,6 +1,6 @@
 // @flow
 import { either, pipe } from 'ramda'
-import { thrower } from '@chantelle/util'
+import { thrower } from '@nod/util'
 
 // eslint-disable-next-line better/explicit-return,fp/no-nil
 // const thrower = error => {

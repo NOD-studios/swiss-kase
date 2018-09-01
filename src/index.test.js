@@ -6,7 +6,7 @@
     better/explicit-return:0,
     fp/no-nil:0
  */
-// import { debug } from '@chantelle/util'
+// import { debug } from '@nod/util'
 import swissKase, { swiss, kase } from '.'
 
 describe('swiss kase', () => {
