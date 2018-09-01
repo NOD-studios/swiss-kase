@@ -4,7 +4,7 @@
   "main": "./build/main.js",
   "module": "./src/index.js",
   "sideEffects": false,
-  "version": "2.0.4-alpha.0",
+  "version": "2.0.5-0",
   "license": "Apache-2.0",
   "eslintIgnore": [
     "bin",
@@ -24,11 +24,11 @@
     "start": "cross-env NODE_ENV=development nodemon --exec \"backpack build\""
   },
   "dependencies": {
-    "@nod/util": "^2.0.4-alpha.0",
+    "@nod/util": "^2.0.5-0",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^2.0.4-alpha.0",
+    "@nod/debug-with-package-name": "^2.0.5-0",
     "backpack-core": "^0.7.0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.78.0",
