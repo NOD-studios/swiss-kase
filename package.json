@@ -20,8 +20,8 @@
     "url": "https://github.com/NOD-studios/nod/issues"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production backpack build",
-    "start": "cross-env NODE_ENV=development nodemon --exec \"backpack build\""
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "start": "cross-env NODE_ENV=development nodemon --exec \"yarn build\""
   },
   "dependencies": {
     "@nod/util": "^2.0.5-0",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@nod/debug-with-package-name": "^2.0.5-0",
-    "backpack-core": "^0.7.0",
+    "@nod/webpack-devops-config": "^2.0.5-0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.78.0",
     "flow-runtime": "^0.17.0",
