@@ -14,7 +14,7 @@ export const kase = (...haystack: Array<any>) => value =>
       haystack => haystack.find(hay => hay === needle) && true,
       haystack => haystack.length === 0
     )(haystack),
-    value,
+    value
   ])
 
 export const swiss = (needle, defaultNeedle) => (...kases) =>
@@ -41,5 +41,5 @@ export default {
   [String.fromCodePoint(128298)]: kase,
   [String.fromCodePoint(129472)]: swiss,
   kase,
-  swiss,
+  swiss
 }
