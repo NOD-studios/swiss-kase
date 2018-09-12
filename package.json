@@ -15,7 +15,7 @@
     "flow-typed",
     ".flowconfig"
   ],
-  "version": "3.0.2-0",
+  "version": "4.0.0",
   "license": "Apache-2.0",
   "eslintIgnore": [
     "bin",
@@ -35,12 +35,12 @@
     "start": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch"
   },
   "dependencies": {
-    "@nod/util": "^3.0.2-0",
+    "@nod/util": "^4.0.0",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^3.0.2-0",
-    "@nod/webpack-devops-config": "^3.0.2-0",
+    "@nod/debug-with-package-name": "^4.0.0",
+    "@nod/webpack-devops-config": "^4.0.0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.78.0",
     "flow-runtime": "^0.17.0",
