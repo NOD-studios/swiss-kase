@@ -1,5 +1,7 @@
 # @nod/swiss-kase 🇨🇭 🧀 🔪
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/NOD-studios/swiss-kase.svg)](https://greenkeeper.io/)
+
 Switch Case as good as Swiss Cheese. Idiomatic-like, dynamic, functional, predictable, stateless, mature, low-fat and fun 🎈 at the same time.
 
 `Käse`,`|kɛːzə|`: Cheese (🇩🇪,🇨🇭)
