@@ -41,8 +41,8 @@
   "devDependencies": {
     "@nod/debug-with-package-name": "^4.0.2",
     "@nod/webpack-devops-config": "^4.0.1",
-    "dotenv-safe": "^4.0.4",
-    "flow-bin": "^0.78.0",
+    "dotenv-safe": "^6.0.0",
+    "flow-bin": "^0.81.0",
     "flow-runtime": "^0.17.0",
     "flow-typed": "^2.5.1"
   }
