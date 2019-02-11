@@ -30,20 +30,18 @@
   "bugs": {
     "url": "https://github.com/NOD-studios/nod/issues"
   },
-  "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "start": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch"
-  },
   "dependencies": {
     "@nod/util": "^4.0.3",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
+    "@nod/babel-preset-nod": "^4.0.3",
     "@nod/debug-with-package-name": "^4.0.3",
+    "@nod/jest-config": "^4.0.3",
     "@nod/webpack-devops-config": "^4.0.1",
-    "dotenv-safe": "^6.0.0",
-    "flow-bin": "^0.81.0",
-    "flow-runtime": "^0.17.0",
-    "flow-typed": "^2.5.1"
+    "flow-bin": "^0.82.0",
+    "flow-typed": "^2.5.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }

@@ -6,10 +6,12 @@
     better/explicit-return:0,
     fp/no-nil:0
  */
-// import { debug } from '@nod/util'
+// import { debug } from '@nod/util/src/server'
 import swissKase, { swiss, kase } from './server'
 
-describe('swiss kase', () => {
+const name = '@nod/swiss-kase'
+
+describe(name, () => {
   test('exports correctly', () => {
     ;[
       kase,
