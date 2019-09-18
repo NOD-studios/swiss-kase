@@ -9,6 +9,11 @@
     "./build/index.esm.js": "./build/index.browser.esm.js"
   },
   "sideEffects": false,
+  "scripty": {
+    "modules": [
+      "@nod/scripty-module"
+    ]
+  },
   "files": [
     "src",
     "build",
@@ -31,17 +36,51 @@
     "url": "https://github.com/NOD-studios/nod/issues"
   },
   "dependencies": {
-    "@nod/util": "^4.0.3",
+    "@nod/archive-util": "workspace:*",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@nod/babel-preset-nod": "^4.0.3",
-    "@nod/debug-with-package-name": "^4.0.3",
-    "@nod/jest-config": "^4.0.3",
-    "@nod/webpack-devops-config": "^4.0.1",
-    "flow-bin": "^0.82.0",
-    "flow-typed": "^2.5.1",
+    "@nod/babel-preset-nod": "workspace:*",
+    "@nod/debug-with-package-name": "workspace:*",
+    "@nod/jest-config": "workspace:*",
+    "@nod/scripty-module": "workspace:*",
+    "@nod/webpack-devops-config": "workspace:*",
+    "typescript": "^3.6.2",
+    "@types/webpack": "^4.39.1",
+    "scripty": "^1.9.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build:all": "scripty",
+    "build:react-scripts": "scripty",
+    "build:tsc": "scripty",
+    "clean:lock": "scripty",
+    "clean:output": "scripty",
+    "configure:env": "scripty",
+    "configure:get": "scripty",
+    "configure:scripty": "scripty",
+    "jest:test": "scripty",
+    "jest:watch": "scripty",
+    "package:name": "scripty",
+    "postinstall": "scripty",
+    "prebuild": "scripty",
+    "prepare": "scripty",
+    "prestart": "scripty",
+    "pretest": "scripty",
+    "run:a": "scripty",
+    "run:p": "scripty",
+    "run:s": "scripty",
+    "start:all": "scripty",
+    "start:react-scripts": "scripty",
+    "start:tsc": "scripty",
+    "start:tslint": "scripty",
+    "test:all-watch": "scripty",
+    "test:all": "scripty",
+    "test:react-scripts": "scripty",
+    "ts:c": "scripty",
+    "ts:install-types": "scripty",
+    "ts:lint": "scripty",
+    "wait-on": "scripty"
   }
 }
