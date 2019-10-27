@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@nod/archive-util": "workspace:*",
-    "ramda": "^0.25.0"
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "@nod/babel-preset-nod": "workspace:*",
@@ -45,7 +45,7 @@
     "@nod/jest-config": "workspace:*",
     "@nod/scripty-module": "workspace:*",
     "@nod/webpack-devops-config": "workspace:*",
-    "typescript": "^3.6.2",
+    "typescript": "3.6.4",
     "@types/webpack": "^4.39.1",
     "scripty": "^1.9.1",
     "webpack": "^4.20.2",
